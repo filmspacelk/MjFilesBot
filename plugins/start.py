@@ -73,6 +73,10 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("🏷 Channel", url = "https://telegram.dog/Mj_Linkz/"),
+                    InlineKeyboardButton("♻️ Group ", url = "https://telegram.dog/MovieJunctionGroup")
+                ]
+               [
                     InlineKeyboardButton("😊 About Me", callback_data = "about"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]

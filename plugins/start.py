@@ -74,10 +74,10 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("🏷 Channel", url = "https://telegram.dog/Mj_Linkz/"),
-                    InlineKeyboardButton("♻️ Group ", url = "https://telegram.dog/MovieJunctionGroup")
+                    InlineKeyboardButton("♻️ Group ", url = "https://telegram.dog/MovieJunction_Group")
                 ],
                [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                    InlineKeyboardButton("🚩 About Me", callback_data = "about"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]

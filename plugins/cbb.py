@@ -10,13 +10,18 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>🔸 My Name : @MjFilesBot \n🔸 Creator : @MasterOfTG  \n🔸 Our Channel : @Mj_Linkz\n🔸 Our Group : @MovieJunctionGroup</b>",
+            text = f"<b>🔸 My Name : @MjFilesBot \n🔸 Creator : @MasterOfTG  \n🔸 Our Channel : @Mj_Linkz\n🔸 Our Group : @Moviejunction_Group</b>",
             disable_web_page_preview = True,
-            reply_markup = InlineKeyboardMarkup(
+            reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔒 Close", callback_data = "close")
-                    ]
+                        InlineKeyboardButton("⚡ CREATOR", url="https://telegram.dog/MasterOfTG"),
+                        InlineKeyboardButton("CLOSE 🚫", callback_data = "close"),
+                    ],
+                    [
+                        InlineKeyboardButton("🔻 FEEDBACKS & SUGGESTIONS 🔻", url="https://telegram.dog/Mj_Chats")
+                   
+                ]     
                 ]
             )
         )
